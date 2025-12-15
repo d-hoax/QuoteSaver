@@ -1,5 +1,3 @@
-# Quote Saver - CMSC335 Final Project
-
 **Submitted by:** Anish Dudeja (anishd17)
 
 **Group Members:** Anish Dudeja (anishd17), Jeffrey Chen (jchen152)
