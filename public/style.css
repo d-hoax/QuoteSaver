@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f4f8;
+  color: #2d3748;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: #1a202c;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+h2 {
+  color: #2d3748;
+  font-size: 1.5em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.quote-display {
+  background-color: #edf2f7;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.quote-text {
+  font-size: 1.4em;
+  color: #2d3748;
+  font-style: italic;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+.quote-author {
+  font-size: 1.1em;
+  color: #4a5568;
+  margin-bottom: 20px;
+  min-height: 30px;
+}
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s;
+}
+.btn-primary {
+  background-color: #4299e1;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #3182ce;
+}
+.btn-success {
+  background-color: #48bb78;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.btn-success:hover {
+  background-color: #38a169;
+}
+.btn-delete {
+  background-color: #f56565;
+  color: #ffffff;
+  font-size: 0.85em;
+  padding: 6px 12px;
+}
+.btn-delete:hover {
+  background-color: #e53e3e;
+}
+.save-form {
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #48bb78;
+}
+.save-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3748;
+  font-weight: 600;
+}
+.save-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  resize: vertical;
+}
+.saved-quotes {
+  margin-top: 30px;
+}
+.no-quotes {
+  text-align: center;
+  color: #718096;
+  font-style: italic;
+  padding: 20px;
+}
+.saved-quote-card {
+  background-color: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #4299e1;
+}
+.saved-quote-text {
+  font-size: 1.2em;
+  color: #2d3748;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.saved-quote-author {
+  font-size: 1em;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+.user-note {
+  background-color: #fff5e6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #2d3748;
+}
+.quote-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #e2e8f0;
+}
+.saved-date {
+  font-size: 0.85em;
+  color: #718096;
+}

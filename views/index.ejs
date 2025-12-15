@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>quote saver for cmsc335</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>random quote saver</h1>
+      <div class="quote-display">
+        <div id="quoteText" class="quote-text">
+          click the button to get a random quote!!
+        </div>
+        <div id="quoteAuthor" class="quote-author"></div>
+        <button onclick="getRandomQuote()" class="btn btn-primary">
+          get random quote
+        </button>
+      </div>
+      <div class="save-form" id="saveForm" style="display: none">
+        <h2>save this quote</h2>
+        <form action="/save-quote" method="POST">
+          <input type="hidden" id="quoteTextInput" name="text" required />
+          <input type="hidden" id="quoteAuthorInput" name="author" required />
+
+          <label for="userNote">add a personal note:</label>
+          <textarea
+            id="userNote"
+            name="userNote"
+            rows="3"
+            placeholder="why does this quote resonate with you?"
+          ></textarea>
+          <button type="submit" class="btn btn-success">save quote</button>
+        </form>
+      </div>
+      <div class="saved-quotes">
+        <h2>my saved quotes (<%= savedQuotes.length %>)</h2>
+        <% if (savedQuotes.length === 0) { %>
+        <p class="no-quotes">
+          no saved quotes yet. get a random quote and save your favorites!
+        </p>
+        <% } else { %> <% savedQuotes.forEach(quote => { %>
+        <div class="saved-quote-card">
+          <div class="saved-quote-text">"<%= quote.text %>"</div>
+          <div class="saved-quote-author">— <%= quote.author %></div>
+          <% if (quote.userNote) { %>
+          <div class="user-note">
+            <strong>my note:</strong> <%= quote.userNote %>
+          </div>
+          <% } %>
+          <div class="quote-footer">
+            <span class="saved-date"
+              >saved: <%= quote.savedAt.toLocaleDateString() %></span
+            >
+            <form
+              action="/delete-quote/<%= quote._id %>"
+              method="POST"
+              style="display: inline"
+            >
+              <button
+                type="submit"
+                class="btn btn-delete"
+                onclick="return confirm('delete this quote?')"
+              >
+                delete
+              </button>
+            </form>
+          </div>
+        </div>
+        <% }) %> <% } %>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
