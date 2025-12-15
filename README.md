@@ -8,6 +8,6 @@
 
 **APIs:** DummyJSON Quotes (https://dummyjson.com/quotes) 
 
-**Contact Email:** anishd17@terpmail.umd.edu
+**Contact Email:** anishd17@terpmail.umd.edu, jchen152@terpmail.umd.edu
 
 **Deployed App Link:** https://quotesaver-ivp2.onrender.com/ 
