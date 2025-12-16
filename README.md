@@ -4,7 +4,7 @@
 
 **App Description:** A  web application that fetches random inspirational quotes and allows users to save their favorites with personal notes to MongoDB
 
-**YouTube Video Link:** need to film
+**YouTube Video Link:** https://youtu.be/zclx7phVZTY
 
 **APIs:** DummyJSON Quotes (https://dummyjson.com/quotes) 
 
